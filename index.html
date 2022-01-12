@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Our First Tribute Page</title>
 </head>
 <body>
-    
+    <h1 id="title">Tribute</h1>
+    <p id="description">This is description paragraph!</p>
+    <form id="survey-form" action="#">
+        <input id="name" type="text" required placeholder="Enter your name here:">
+        <label for="email"></label>
+        <input type="email" required pattern="[^ @]*@[^ @]*" id="email" 
+            name="email" placeholder="Enter your email here">
+        <label for="lang">Your region</label>
+        <select name="languages" id="lang">
+            <option value="North America">North America</option>
+            <option value="Sout America">PHP</option>
+            <option value="java">Java</option>
+            <option value="golang">Golang</option>
+            <option value="python">Python</option>
+            <option value="c#">C#</option>
+            <option value="C++">C++</option>
+            <option value="erlang">Erlang</option>
+        </select>
+
+
+
+
+
+    </form>
 </body>
 </html>
