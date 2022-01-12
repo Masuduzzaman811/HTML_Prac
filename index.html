@@ -45,10 +45,13 @@
 
 
 
+        <div class="number-rows">Number of Children</div>
+        <input type="number" id="number-children" min="0" max="10" placeholder="Children" 
+        oninvalid="this.setCustomValidity('Invalid Number')" oninput="this.setCustomValidity('')"/>
 
-
-
-
+        <div class="comment-rows">Write what you want to tell us</div>
+        <textarea  id="comment-section"  placeholder="Feel free yourself..." ></textarea>
+        <button id="submit-button" type="submit">Submit</button>
     </form>
 </body>
 </html>
