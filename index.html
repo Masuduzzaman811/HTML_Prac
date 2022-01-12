@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our First Tribute Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1 id="title">Tribute</h1>
     <p id="description">This is description paragraph!</p>
     <form id="survey-form" action="#">
+
         <label for="name">Please enter your name:</label>
         <input id="name" type="text" required placeholder="Enter your name here:"><br>
         <label for="email">Please enter your email:</label>
@@ -26,6 +28,9 @@
             <option value="Antarctica">Antarctica</option>
 
         </select><br>
+        <div class="number-rows">Number of Children</div>
+        <input type="number" id="number-children" min="0" max="10" placeholder="Children" 
+        oninvalid="this.setCustomValidity('Invalid Number')" oninput="this.setCustomValidity('')"/>
         <p>Select your favorite cuisine:</p>
 
          <input type="radio" id="asian" name="fav_cuisin" value="Asian">
@@ -45,9 +50,11 @@
 
 
 
-        <div class="number-rows">Number of Children</div>
-        <input type="number" id="number-children" min="0" max="10" placeholder="Children" 
-        oninvalid="this.setCustomValidity('Invalid Number')" oninput="this.setCustomValidity('')"/>
+       
+        </select>
+
+
+        
 
         <div class="comment-rows">Write what you want to tell us</div>
         <textarea  id="comment-section"  placeholder="Feel free yourself..." ></textarea>
